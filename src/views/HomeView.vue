@@ -91,7 +91,7 @@ watch: {
 
 <template>
  <div class="input-main">
-  <input   v-if="showSearchBar" type="text" v-model="searchTerm" class="input-child"  @keyup.enter="onInput"> 
+  <input   v-if="showSearchBar" type="text" v-model="searchTerm" class="input-child"  @input="onInput"> 
   <button @click="toggleSearchBar" class="search-icon-button">
     <i v-if="showSearchBar" class="fa-solid fa-x"></i>
       <i v-else class="fa-solid fa-magnifying-glass"></i>
